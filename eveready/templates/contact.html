@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Contact{% endblock title %}
+{% block body %}
+
+<link rel="stylesheet" type="text/css" href="/static/conatct.css">
+<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+<form method="post" action="/contact">
+{% csrf_token %}
+    <div class="container">
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+                <h2>Contact Us</h2>
+                <input type="text" class="field" placeholder="Your Name" name="user">
+                <input type="text" class="field" placeholder="Your Email" name="email">
+                <input type="text" class="field" placeholder="Phone" name="phone">
+                <textarea placeholder="Message" class="field" name="messege"></textarea>
+                <button class="btn">Send</button>
+            </div>
+        </div>
+    </div>
+</form>    
+{% endblock body %}

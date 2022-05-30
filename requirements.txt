@@ -14,7 +14,6 @@ antlr4-python3-runtime==4.9.1
 anyio==3.5.0
 apispec==3.3.1
 apispec-webframeworks==0.5.2
-apparmor==2.13.6
 appdirs==1.4.4
 applicationinsights==0.11.9
 argcomplete==1.8.1
